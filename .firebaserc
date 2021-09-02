@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "produtos-7d1f5": {
+      "hosting": {
+        "firestore": [
+          "produtos-7d1f5"
+        ]
+      }
+    }
+  }
+}
