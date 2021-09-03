@@ -13,10 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
-      - set: http_proxy = 'http://127.0.0.1:1080'
-      - set: https_proxy = 'http://127.0.0.1:1080'
-      - set: NO_PROXY = 'localhost,127.0.0.1'
-      - run: firebase login
+      - run: npx firebase-tools deploy --only hosting --project products-prod-daf8d
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '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'
