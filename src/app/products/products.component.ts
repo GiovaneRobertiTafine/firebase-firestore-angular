@@ -35,7 +35,6 @@ export class ProductsComponent implements OnInit {
 
     ngOnInit(): void {
         this.products$ = this.productService.getProducts();
-        console.log('');
         // Código para filtrar o nome mas com debounce time
         //utilizando o formControl
         // this.firstNameControl.valueChanges
