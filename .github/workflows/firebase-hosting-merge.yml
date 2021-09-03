@@ -11,13 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run build
-      - run: firebase login:ci
-      - run: npx firebase-tools deploy --only hosting --project products-prod-daf8d
+      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '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'
-          firebaseServiceAccount: 'firebase-adminsdk-go603@products-prod-daf8d.iam.gserviceaccount.com'
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PRODUCTS_PROD_DAF8D }}'
           channelId: live
           projectId: products-prod-daf8d
