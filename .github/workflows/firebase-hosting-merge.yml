@@ -13,6 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
+      - run: firebase login
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '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'
