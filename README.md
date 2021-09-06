@@ -1,8 +1,8 @@
 <h3 align="center">Firestore Angular</h3>
 
-<h4 align="center">Aplicação Angular utilizando Firestore do Fibase, com integração e distribuimento contínuo com Git Actions </h4>
+<h4 align="center">Aplicação Angular utilizando Firestore Database do Firebase, com integração e distribuimento contínuo com Git Actions </h4>
 
-:o: **Problema:**<br> Criar um projeto em Angular que utilize o Firebase para salvar dados.
+:o: **Problema:**<br> Criar um projeto em Angular que utilize o Firebase para fazer CRUD de dados.
 
 :heavy_check_mark: **Solução:**<br> Pesquisas referente a utilização de bibliotecas para integração ao Firebase
 
